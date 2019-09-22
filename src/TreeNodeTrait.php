@@ -75,6 +75,10 @@ trait TreeNodeTrait
             throw new \LogicException('A node cannot be a child of itself.');
         }
 
+        if ($this->hasChild($child)) {
+            return;
+        }
+
         $this->getChildren()->append($child);
         $child->setParent($this);
     }
