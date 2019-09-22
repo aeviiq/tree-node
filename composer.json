@@ -1,0 +1,28 @@
+{
+    "name": "aeviiq/tree-node",
+    "type": "library",
+    "description": "A library that provides the tree node functionality.",
+    "keywords": [
+        "php",
+        "tree",
+        "node",
+        "tree-node",
+        "aeviiq"
+    ],
+    "homepage": "https://github.com/aeviiq/tree-node",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aeviiq Tree Node contributors",
+            "homepage": "https://github.com/aeviiq/tree-node/graphs/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aeviiq\\TreeNode\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    }
+}
