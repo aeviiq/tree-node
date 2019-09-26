@@ -95,10 +95,16 @@ trait TreeNodeTrait
         }
 
         $this->getChildren()->remove($child);
+        $child->setParent(null);
     }
 
     public function clearChildren(): void
     {
-        $this->getChildren()->clear();
+        $children = $this->getChildren();
+        foreach ($children as $child) {
+            $child->setParent(null);
+        }
+
+        $children->clear();
     }
 }
