@@ -41,6 +41,6 @@ $foo2->getRoot() === $foo; // true
 
 ## Notable mentions
 *There is no 'protection' against the case where a node can become it's own grand parent|child. 
-When this is the case, it could cause infinite recursion errors in method such as getRoot(). 
-The reason this is not prevented is because it is not worth the performance decrease to recursively validate 
-against this case, as this is just a plain wrong usage/implementation of a tree node structure.*
+When this is the case, it could cause infinite recursion errors in methods such as getRoot(). 
+Making a node its own grand parent or grand child is just a plain wrong usage of this tree node component,
+therefor it is not worth the performance decrease to recursively validate against.
